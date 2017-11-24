@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * adds one point to player A
+     * @param view button pressed
+     */
     public void addScorePlayerA(View view) {
         if (win) return;
 
@@ -65,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
         updateButtonsText();
     }
 
+    /**
+     * adds one point to player A in tie break mode
+     */
     private void addScorePlayerATieBreak() {
         playerAScore++;
         if ((playerAScore == 7 && playerBScore < 6) || (playerAScore == 6 && playerBScore < 5) || playerAAdvantage) {
@@ -79,6 +86,9 @@ public class MainActivity extends AppCompatActivity {
         updateButtonsText();
     }
 
+    /**
+     * adds one game to player A
+     */
     private void addGamePlayerA() {
         playerAGames++;
         if (tieBreak || (playerAGames == gamesToWin && playerBGames < gamesToWin - 1)) {
@@ -96,6 +106,9 @@ public class MainActivity extends AppCompatActivity {
         updateGamesText();
     }
 
+    /**
+     * adds one set to player A
+     */
     private void addSetPlayerA() {
         playerASets++;
         TextView textView = findViewById(R.id.player_A_sets_text_view);
@@ -108,6 +121,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * adds one point to player B
+     * @param view button pressed
+     */
     public void addScorePlayerB(View view) {
         if (win) return;
 
@@ -144,6 +161,9 @@ public class MainActivity extends AppCompatActivity {
         updateButtonsText();
     }
 
+    /**
+     * adds one point in tie-break mode to player B
+     */
     private void addScorePlayerBTieBreak() {
         playerBScore++;
         if ((playerBScore == 7 && playerAScore < 6) || (playerBScore == 6 && playerAScore < 5) || playerBAdvantage) {
@@ -158,6 +178,9 @@ public class MainActivity extends AppCompatActivity {
         updateButtonsText();
     }
 
+    /**
+     * add one game to player B
+     */
     private void addGamePlayerB() {
         playerBGames++;
         if (tieBreak || (playerBGames == gamesToWin && playerAGames < gamesToWin - 1)) {
@@ -175,6 +198,9 @@ public class MainActivity extends AppCompatActivity {
         updateGamesText();
     }
 
+    /**
+     * adds one set to player B
+     */
     private void addSetPlayerB() {
         playerBSets++;
         TextView textView = findViewById(R.id.player_B_sets_text_view);
@@ -187,6 +213,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * updates text on both buttons
+     */
     private void updateButtonsText() {
         Button scoreAButton = findViewById(R.id.player_A_score_button);
         Button scoreBButton = findViewById(R.id.player_B_score_button);
@@ -206,6 +235,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * updates text views with games score
+     */
     private void updateGamesText() {
         TextView gamesATextView = findViewById(R.id.player_A_games_text_view);
         TextView gamesBTextView = findViewById(R.id.player_B_games_text_view);
@@ -213,6 +245,10 @@ public class MainActivity extends AppCompatActivity {
         gamesBTextView.setText(String.valueOf(playerBGames));
     }
 
+    /**
+     * starts new match, sets all global variables to zeroes and false
+     * @param view new match button
+     */
     public void newMatch(View view) {
         playerAScore = 0;
         playerBScore = 0;
@@ -248,13 +284,19 @@ public class MainActivity extends AppCompatActivity {
         radioGroup.setVisibility(View.VISIBLE);
     }
 
+    /**
+     * sets long match
+     * @param view radio button long match chosen
+     */
     public void setLongMatch(View view) {
         setsToWin = 5;
     }
 
+    /**
+     * sets short match
+     * @param view radio button short match chosen
+     */
     public void setShortMatch(View view) {
         setsToWin = 3;
     }
-
-
 }

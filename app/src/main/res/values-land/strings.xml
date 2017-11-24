@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tennis Score Counter</string>
+    <string name="new_game">new match</string>
+    <string name="long_match">long match \n(5 wins)</string>
+    <string name="short_match">short match \n(3 wins)</string>
+    <string name="sets_title">sets</string>
+    <string name="games_title">games</string>
+    <string name="score_title">score</string>
+    <string name="player_A_title">player A</string>
+    <string name="player_B_title">player B</string>
+    <string name="deuce">deuce</string>
+    <string name="more">more</string>
+    <string name="less">less</string>
+    <string name="tie_break">tie break</string>
+    <string name="player_A_wins">player A wins!</string>
+    <string name="player_B_wins">player B wins!</string>
+</resources>

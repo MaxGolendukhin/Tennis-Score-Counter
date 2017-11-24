@@ -8,7 +8,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private final int gamesToWin = 6;
+    private final int GAMES_TO_WIN = 6;
+
     private int playerAScore;
     private int playerBScore;
     private int playerAGames;
@@ -90,14 +91,14 @@ public class MainActivity extends AppCompatActivity {
      */
     private void addGamePlayerA() {
         playerAGames++;
-        if (tieBreak || (playerAGames == gamesToWin && playerBGames < gamesToWin - 1)) {
+        if (tieBreak || (playerAGames == GAMES_TO_WIN && playerBGames < GAMES_TO_WIN - 1)) {
             tieBreak = false;
             playerAGames = 0;
             playerBGames = 0;
             TextView infoTextView = findViewById(R.id.info_text_view);
             infoTextView.setText("");
             addSetPlayerA();
-        } else if (playerAGames == gamesToWin - 1 && playerBGames == gamesToWin - 1) {
+        } else if (playerAGames == GAMES_TO_WIN - 1 && playerBGames == GAMES_TO_WIN - 1) {
             tieBreak = true;
             TextView infoTextView = findViewById(R.id.info_text_view);
             infoTextView.setText(R.string.tie_break);
@@ -182,14 +183,14 @@ public class MainActivity extends AppCompatActivity {
      */
     private void addGamePlayerB() {
         playerBGames++;
-        if (tieBreak || (playerBGames == gamesToWin && playerAGames < gamesToWin - 1)) {
+        if (tieBreak || (playerBGames == GAMES_TO_WIN && playerAGames < GAMES_TO_WIN - 1)) {
             tieBreak = false;
             playerAGames = 0;
             playerBGames = 0;
             TextView infoTextView = findViewById(R.id.info_text_view);
             infoTextView.setText("");
             addSetPlayerB();
-        } else if (playerAGames == gamesToWin - 1 && playerBGames == gamesToWin - 1) {
+        } else if (playerAGames == GAMES_TO_WIN - 1 && playerBGames == GAMES_TO_WIN - 1) {
             tieBreak = true;
             TextView infoTextView = findViewById(R.id.info_text_view);
             infoTextView.setText(R.string.tie_break);

@@ -67,25 +67,25 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/tennisscorecounter/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+              <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
               <folding>
                 <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#3264#3282#0" expanded="true" />
+                <element signature="e#3262#3280#0" expanded="true" />
                 <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#3683#3705#0" expanded="true" />
+                <element signature="e#3681#3703#0" expanded="true" />
                 <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#6104#6122#0" expanded="true" />
+                <element signature="e#6102#6120#0" expanded="true" />
                 <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#6523#6545#0" expanded="true" />
+                <element signature="e#6521#6543#0" expanded="true" />
                 <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#6808#6822#0" expanded="true" />
-                <element signature="e#6858#6872#0" expanded="true" />
-                <element signature="e#6947#6960#0" expanded="true" />
-                <element signature="e#6996#7009#0" expanded="true" />
-                <element signature="e#7084#7097#0" expanded="true" />
-                <element signature="e#7133#7146#0" expanded="true" />
+                <element signature="e#6806#6820#0" expanded="true" />
+                <element signature="e#6856#6870#0" expanded="true" />
+                <element signature="e#6945#6958#0" expanded="true" />
+                <element signature="e#6994#7007#0" expanded="true" />
+                <element signature="e#7082#7095#0" expanded="true" />
+                <element signature="e#7131#7144#0" expanded="true" />
                 <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
               </folding>
@@ -2001,7 +2001,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511533147426" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511533195887" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2048,7 +2048,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511533147426" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511533195887" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2295,7 +2295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511533053481</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="first commit">
+      <created>1511533155940</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1511533155940</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2406,22 +2413,22 @@
           <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding>
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3264#3282#0" expanded="true" />
+            <element signature="e#3262#3280#0" expanded="true" />
             <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3683#3705#0" expanded="true" />
+            <element signature="e#3681#3703#0" expanded="true" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6104#6122#0" expanded="true" />
+            <element signature="e#6102#6120#0" expanded="true" />
             <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6523#6545#0" expanded="true" />
+            <element signature="e#6521#6543#0" expanded="true" />
             <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6808#6822#0" expanded="true" />
-            <element signature="e#6858#6872#0" expanded="true" />
-            <element signature="e#6947#6960#0" expanded="true" />
-            <element signature="e#6996#7009#0" expanded="true" />
-            <element signature="e#7084#7097#0" expanded="true" />
-            <element signature="e#7133#7146#0" expanded="true" />
+            <element signature="e#6806#6820#0" expanded="true" />
+            <element signature="e#6856#6870#0" expanded="true" />
+            <element signature="e#6945#6958#0" expanded="true" />
+            <element signature="e#6994#7007#0" expanded="true" />
+            <element signature="e#7082#7095#0" expanded="true" />
+            <element signature="e#7131#7144#0" expanded="true" />
             <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
           </folding>
@@ -2452,22 +2459,22 @@
           <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
           <folding>
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3264#3282#0" expanded="true" />
+            <element signature="e#3262#3280#0" expanded="true" />
             <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3683#3705#0" expanded="true" />
+            <element signature="e#3681#3703#0" expanded="true" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6104#6122#0" expanded="true" />
+            <element signature="e#6102#6120#0" expanded="true" />
             <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6523#6545#0" expanded="true" />
+            <element signature="e#6521#6543#0" expanded="true" />
             <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6808#6822#0" expanded="true" />
-            <element signature="e#6858#6872#0" expanded="true" />
-            <element signature="e#6947#6960#0" expanded="true" />
-            <element signature="e#6996#7009#0" expanded="true" />
-            <element signature="e#7084#7097#0" expanded="true" />
-            <element signature="e#7133#7146#0" expanded="true" />
+            <element signature="e#6806#6820#0" expanded="true" />
+            <element signature="e#6856#6870#0" expanded="true" />
+            <element signature="e#6945#6958#0" expanded="true" />
+            <element signature="e#6994#7007#0" expanded="true" />
+            <element signature="e#7082#7095#0" expanded="true" />
+            <element signature="e#7131#7144#0" expanded="true" />
             <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
           </folding>
@@ -2543,25 +2550,25 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/tennisscorecounter/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding>
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3264#3282#0" expanded="true" />
+            <element signature="e#3262#3280#0" expanded="true" />
             <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#3683#3705#0" expanded="true" />
+            <element signature="e#3681#3703#0" expanded="true" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6104#6122#0" expanded="true" />
+            <element signature="e#6102#6120#0" expanded="true" />
             <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6523#6545#0" expanded="true" />
+            <element signature="e#6521#6543#0" expanded="true" />
             <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#6808#6822#0" expanded="true" />
-            <element signature="e#6858#6872#0" expanded="true" />
-            <element signature="e#6947#6960#0" expanded="true" />
-            <element signature="e#6996#7009#0" expanded="true" />
-            <element signature="e#7084#7097#0" expanded="true" />
-            <element signature="e#7133#7146#0" expanded="true" />
+            <element signature="e#6806#6820#0" expanded="true" />
+            <element signature="e#6856#6870#0" expanded="true" />
+            <element signature="e#6945#6958#0" expanded="true" />
+            <element signature="e#6994#7007#0" expanded="true" />
+            <element signature="e#7082#7095#0" expanded="true" />
+            <element signature="e#7131#7144#0" expanded="true" />
             <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
           </folding>

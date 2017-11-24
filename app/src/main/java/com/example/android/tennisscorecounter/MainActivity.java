@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addScorePlayerA(View view) {
-        //if (win) return;
+        if (win) return;
 
         if (deuceScore) {
             playerAAdvantage = true;

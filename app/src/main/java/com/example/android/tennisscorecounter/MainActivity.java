@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private final int gamesToWin = 6;
-
     private int playerAScore;
     private int playerBScore;
     private int playerAGames;

@@ -29,6 +29,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    protected  void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("playerAScore", playerAScore);
+        outState.putInt("playerBScore", playerBScore);
+        outState.putInt("playerAGames", playerAGames);
+        outState.putInt("playerBGames", playerBGames);
+        outState.putInt("playerASets", playerASets);
+        outState.putInt("playerBSets", playerBSets);
+        outState.putInt("setsToWin", setsToWin);
+        outState.putBoolean("playerAAdvantage", playerAAdvantage);
+        outState.putBoolean("playerBAdvantage", playerBAdvantage);
+        outState.putBoolean("deuceScore", deuceScore);
+        outState.putBoolean("tieBreak", tieBreak);
+        outState.putBoolean("win", win);
+        super.onSaveInstanceState(outState);
+    }
+
     /**
      * adds one point to player A
      * @param view button pressed

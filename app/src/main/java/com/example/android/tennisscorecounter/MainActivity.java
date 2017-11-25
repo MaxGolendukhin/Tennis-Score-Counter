@@ -32,8 +32,31 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected  void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-    }
 
+        playerAScore = savedInstanceState.getInt("playerAScore");
+        playerBScore = savedInstanceState.getInt("playerBScore");
+        playerAGames = savedInstanceState.getInt("playerAGames");
+        playerBGames = savedInstanceState.getInt("playerBGames");
+        playerASets = savedInstanceState.getInt("playerASets");
+        playerBSets = savedInstanceState.getInt("playerBSets");
+        setsToWin = savedInstanceState.getInt("setsToWin");
+        playerAAdvantage = savedInstanceState.getBoolean("playerAAdvantage");
+        playerBAdvantage = savedInstanceState.getBoolean("playerBAdvantage");
+        deuceScore = savedInstanceState.getBoolean("deuceScore");
+        tieBreak = savedInstanceState.getBoolean("tieBreak");
+
+        updateButtonsText();
+        updateGamesText();
+        updateSetsText();
+        if(playerAScore > 0 || playerBScore > 0 || playerAGames > 0 || playerBGames > 0 ||
+                playerASets > 0 || playerBSets > 0 || playerAAdvantage || playerBAdvantage || deuceScore){
+            RadioGroup radioGroup = findViewById(R.id.set_type_radio_buttons_group);
+            radioGroup.setVisibility(View.GONE);
+            TextView textView = findViewById(R.id.info_text_view);
+            textView.setVisibility(View.VISIBLE);
+            updateInfoText();
+        }
+    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -48,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putBoolean("playerBAdvantage", playerBAdvantage);
         outState.putBoolean("deuceScore", deuceScore);
         outState.putBoolean("tieBreak", tieBreak);
-        outState.putBoolean("win", win);
+
         super.onSaveInstanceState(outState);
     }
 
@@ -134,14 +157,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void addSetPlayerA() {
         playerASets++;
-        TextView textView = findViewById(R.id.player_A_sets_text_view);
-        textView.setText(String.valueOf(playerASets));
-
-        if (playerASets == setsToWin) {
-            win = true;
-            TextView infoTextView = findViewById(R.id.info_text_view);
-            infoTextView.setText(R.string.player_A_wins);
-        }
+        updateSetsText();
+        updateInfoText();
     }
 
     /**
@@ -226,14 +243,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void addSetPlayerB() {
         playerBSets++;
-        TextView textView = findViewById(R.id.player_B_sets_text_view);
-        textView.setText(String.valueOf(playerBSets));
-
-        if (playerBSets == setsToWin) {
-            win = true;
-            TextView infoTextView = findViewById(R.id.info_text_view);
-            infoTextView.setText(R.string.player_B_wins);
-        }
+        updateSetsText();
+        updateInfoText();
     }
 
     /**
@@ -266,6 +277,26 @@ public class MainActivity extends AppCompatActivity {
         TextView gamesBTextView = findViewById(R.id.player_B_games_text_view);
         gamesATextView.setText(String.valueOf(playerAGames));
         gamesBTextView.setText(String.valueOf(playerBGames));
+    }
+
+    private void updateSetsText() {
+        TextView setsATextView = findViewById(R.id.player_A_sets_text_view);
+        TextView setsBTextView = findViewById(R.id.player_B_sets_text_view);
+
+        setsATextView.setText(String.valueOf(playerASets));
+        setsBTextView.setText(String.valueOf(playerBSets));
+    }
+
+    private void updateInfoText() {
+        if (playerASets == setsToWin){
+            win = true;
+            TextView infoTextView = findViewById(R.id.info_text_view);
+            infoTextView.setText(R.string.player_A_wins);
+        }else if(playerBSets == setsToWin){
+            win = true;
+            TextView infoTextView = findViewById(R.id.info_text_view);
+            infoTextView.setText(R.string.player_B_wins);
+        }
     }
 
     /**

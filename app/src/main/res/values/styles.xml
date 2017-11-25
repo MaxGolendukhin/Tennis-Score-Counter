@@ -1,12 +1,9 @@
 <resources>
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorButtonNormal">@color/colorButtonNormal</item>
-
     </style>
 
     <style name="teams_data_style">
@@ -19,7 +16,7 @@
 
     <style name="teams_score_style" parent="teams_data_style">
         <item name="android:text">0</item>
-        <item name="android:textSize">32sp</item>
+        <item name="android:textSize">@dimen/text_size</item>
         <item name="android:textColor">@android:color/black</item>
 
     </style>

@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Restores state of needed variables ans set its values to views
-     * @param savedInstanceState contains all variables to restore
+     * Restores state of needed variables ans set its values to views.
+     * @param savedInstanceState contains all variables to restore.
      */
     @Override
     protected  void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         updateGamesText();
         updateSetsText();
         if (playerAScore > 0 || playerBScore > 0 || playerAGames > 0 || playerBGames > 0 ||
-                playerASets > 0 || playerBSets > 0 || playerAAdvantage || playerBAdvantage || deuceScore){
+                playerASets > 0 || playerBSets > 0 || playerAAdvantage || playerBAdvantage || deuceScore) {
             RadioGroup radioGroup = findViewById(R.id.set_type_radio_buttons_group);
             radioGroup.setVisibility(View.GONE);
             TextView textView = findViewById(R.id.info_text_view);
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Saves all variables to restore them after screen will be recreated after rotation.
-     * @param outState bundle to save variables
+     * @param outState bundle to save variables.
      */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * adds one point to player A
-     * @param view button pressed
+     * Adds one point to player A.
+     * @param view button pressed.
      */
     public void addScorePlayerA(View view) {
         if (win) return;
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * adds one point to player A in tie break mode
+     * Adds one point to player A in tie break mode.
      */
     private void addScorePlayerATieBreak() {
         playerAScore++;
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * adds one game to player A
+     * Adds one game to player A.
      */
     private void addGamePlayerA() {
         playerAGames++;
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * adds one set to player A
+     * Adds one set to player A.
      */
     private void addSetPlayerA() {
         playerASets++;
@@ -170,8 +170,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * adds one point to player B
-     * @param view button pressed
+     * Adds one point to player B.
+     * @param view button pressed.
      */
     public void addScorePlayerB(View view) {
         if (win) return;
@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * adds one point in tie-break mode to player B
+     * Adds one point in tie-break mode to player B.
      */
     private void addScorePlayerBTieBreak() {
         playerBScore++;
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * add one game to player B
+     * Add one game to player B.
      */
     private void addGamePlayerB() {
         playerBGames++;
@@ -247,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * adds one set to player B
+     * Adds one set to player B.
      */
     private void addSetPlayerB() {
         playerBSets++;
@@ -256,7 +256,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * updates text on both buttons
+     * Updates text on both buttons.
      */
     private void updateButtonsText() {
         Button scoreAButton = findViewById(R.id.player_A_score_button);
@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * updates text views with games score
+     * Updates text views with games score.
      */
     private void updateGamesText() {
         TextView gamesATextView = findViewById(R.id.player_A_games_text_view);
@@ -287,6 +287,9 @@ public class MainActivity extends AppCompatActivity {
         gamesBTextView.setText(String.valueOf(playerBGames));
     }
 
+    /**
+     * Updates text views sets score.
+     */
     private void updateSetsText() {
         TextView setsATextView = findViewById(R.id.player_A_sets_text_view);
         TextView setsBTextView = findViewById(R.id.player_B_sets_text_view);
@@ -295,12 +298,15 @@ public class MainActivity extends AppCompatActivity {
         setsBTextView.setText(String.valueOf(playerBSets));
     }
 
+    /**
+     * Updates info tex view.
+     */
     private void updateInfoText() {
-        if (playerASets == setsToWin){
+        if (playerASets == setsToWin) {
             win = true;
             TextView infoTextView = findViewById(R.id.info_text_view);
             infoTextView.setText(R.string.player_A_wins);
-        }else if(playerBSets == setsToWin){
+        } else if (playerBSets == setsToWin) {
             win = true;
             TextView infoTextView = findViewById(R.id.info_text_view);
             infoTextView.setText(R.string.player_B_wins);
@@ -308,8 +314,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * starts new match, sets all global variables to zeroes and false
-     * @param view new match button
+     * Starts new match, sets all global variables to zeroes and false.
+     * @param view new match button.
      */
     public void newMatch(View view) {
         playerAScore = 0;
@@ -347,16 +353,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * sets long match
-     * @param view radio button long match chosen
+     * Sets long match.
+     * @param view radio button long match chosen.
      */
     public void setLongMatch(View view) {
         setsToWin = 5;
     }
 
     /**
-     * sets short match
-     * @param view radio button short match chosen
+     * Sets short match.
+     * @param view radio button short match chosen.
      */
     public void setShortMatch(View view) {
         setsToWin = 3;

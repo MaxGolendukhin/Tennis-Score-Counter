@@ -53,16 +53,22 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/tennisscorecounter/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+            <state relative-caret-position="119">
+              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+                <element signature="docComment;method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+                <element signature="docComment;method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
@@ -70,14 +76,20 @@
                 <element signature="docComment;method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#updateGamesText#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#10732#10754#0" expanded="true" />
-                <element signature="e#10929#10951#0" expanded="true" />
+                <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
+                <element signature="docComment;method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+                <element signature="docComment;method#updateInfoText#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#updateInfoText#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#newMatch#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#setLongMatch#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#setShortMatch#0;class#MainActivity#0" expanded="false" />
+                <marker date="1511613009277" expanded="false" signature="301:713" ph="..." />
               </folding>
             </state>
           </provider>
@@ -2116,7 +2128,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511612542814" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511613053952" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2163,7 +2175,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511612542815" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511613053952" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2501,7 +2513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511612229725</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="first commit">
+      <created>1511612550094</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1511612550094</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2600,13 +2619,19 @@
         <state relative-caret-position="731">
           <caret line="165" column="7" lean-forward="false" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
@@ -2614,14 +2639,20 @@
             <element signature="docComment;method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateGamesText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10732#10754#0" expanded="true" />
-            <element signature="e#10929#10951#0" expanded="true" />
+            <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateInfoText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateInfoText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setLongMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setShortMatch#0;class#MainActivity#0" expanded="false" />
+            <marker date="1511613009277" expanded="false" signature="301:713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2631,13 +2662,19 @@
         <state relative-caret-position="731">
           <caret line="165" column="7" lean-forward="false" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
@@ -2645,14 +2682,20 @@
             <element signature="docComment;method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateGamesText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10732#10754#0" expanded="true" />
-            <element signature="e#10929#10951#0" expanded="true" />
+            <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateInfoText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateInfoText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setLongMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setShortMatch#0;class#MainActivity#0" expanded="false" />
+            <marker date="1511613009277" expanded="false" signature="301:713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2662,13 +2705,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
@@ -2676,14 +2725,20 @@
             <element signature="docComment;method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateGamesText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10732#10754#0" expanded="true" />
-            <element signature="e#10929#10951#0" expanded="true" />
+            <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateInfoText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateInfoText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setLongMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setShortMatch#0;class#MainActivity#0" expanded="false" />
+            <marker date="1511613009277" expanded="false" signature="301:713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2693,13 +2748,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
@@ -2707,14 +2768,20 @@
             <element signature="docComment;method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateGamesText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10732#10754#0" expanded="true" />
-            <element signature="e#10929#10951#0" expanded="true" />
+            <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateInfoText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateInfoText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setLongMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setShortMatch#0;class#MainActivity#0" expanded="false" />
+            <marker date="1511613009277" expanded="false" signature="301:713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2734,13 +2801,19 @@
         <state relative-caret-position="544">
           <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
@@ -2748,14 +2821,20 @@
             <element signature="docComment;method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateGamesText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10732#10754#0" expanded="true" />
-            <element signature="e#10929#10951#0" expanded="true" />
+            <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateInfoText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateInfoText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setLongMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setShortMatch#0;class#MainActivity#0" expanded="false" />
+            <marker date="1511613009277" expanded="false" signature="301:713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2782,13 +2861,19 @@
         <state relative-caret-position="1207">
           <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
@@ -2796,14 +2881,20 @@
             <element signature="docComment;method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateGamesText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10732#10754#0" expanded="true" />
-            <element signature="e#10929#10951#0" expanded="true" />
+            <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateInfoText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateInfoText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setLongMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setShortMatch#0;class#MainActivity#0" expanded="false" />
+            <marker date="1511613009277" expanded="false" signature="301:713" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2896,16 +2987,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/tennisscorecounter/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        <state relative-caret-position="119">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addScorePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerATieBreak#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerA#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addScorePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addScorePlayerBTieBreak#0;class#MainActivity#0" expanded="false" />
@@ -2913,14 +3010,20 @@
             <element signature="docComment;method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="method#addGamePlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addSetPlayerB#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateButtonsText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#updateGamesText#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10732#10754#0" expanded="true" />
-            <element signature="e#10929#10951#0" expanded="true" />
+            <element signature="method#updateGamesText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateSetsText#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#updateInfoText#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#updateInfoText#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="method#newMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setLongMatch#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#setShortMatch#0;class#MainActivity#0" expanded="false" />
+            <marker date="1511613009277" expanded="false" signature="301:713" ph="..." />
           </folding>
         </state>
       </provider>

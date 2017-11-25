@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Restores state of needed variables ans set its values to views
+     * @param savedInstanceState contains all variables to restore
+     */
     @Override
     protected  void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -48,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         updateButtonsText();
         updateGamesText();
         updateSetsText();
-        if(playerAScore > 0 || playerBScore > 0 || playerAGames > 0 || playerBGames > 0 ||
+        if (playerAScore > 0 || playerBScore > 0 || playerAGames > 0 || playerBGames > 0 ||
                 playerASets > 0 || playerBSets > 0 || playerAAdvantage || playerBAdvantage || deuceScore){
             RadioGroup radioGroup = findViewById(R.id.set_type_radio_buttons_group);
             radioGroup.setVisibility(View.GONE);
@@ -58,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Saves all variables to restore them after screen will be recreated after rotation.
+     * @param outState bundle to save variables
+     */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putInt("playerAScore", playerAScore);

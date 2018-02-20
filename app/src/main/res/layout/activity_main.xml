@@ -65,18 +65,14 @@
 
             <Button
                 android:id="@+id/player_A_score_button"
-                style="@style/teams_score_style"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                style="@style/button_style"
                 android:onClick="addScorePlayerA" />
 
             <View style="@style/separator_view_style" />
 
             <Button
                 android:id="@+id/player_B_score_button"
-                style="@style/teams_score_style"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                style="@style/button_style"
                 android:onClick="addScorePlayerB" />
         </LinearLayout>
     </LinearLayout>
@@ -87,23 +83,19 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/new_game_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
+        android:layout_marginBottom="@dimen/radio_group_layout_marginBottom"
         android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/short_match_set_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            style="@style/radio_button_style"
             android:checked="true"
             android:onClick="setShortMatch"
             android:text="@string/short_match" />
 
         <RadioButton
             android:id="@+id/long_match_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
+            style="@style/radio_button_style"
             android:onClick="setLongMatch"
             android:text="@string/long_match" />
     </RadioGroup>
@@ -114,9 +106,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/new_game_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
+        android:layout_marginBottom="@dimen/info_text_margin_bottom"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="@dimen/info_text_size"
         android:visibility="gone" />
 
     <Button
@@ -125,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="@dimen/button_margin_bottom"
         android:onClick="newMatch"
         android:text="@string/new_game"
         android:textAllCaps="true" />

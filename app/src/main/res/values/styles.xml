@@ -1,5 +1,5 @@
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -11,14 +11,13 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/main_text_size</item>
     </style>
 
     <style name="teams_score_style" parent="teams_data_style">
         <item name="android:text">0</item>
-        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textSize">@dimen/score_text_size</item>
         <item name="android:textColor">@android:color/black</item>
-
     </style>
 
     <style name="separator_view_style">
@@ -33,7 +32,7 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_marginTop">@dimen/layout_margin_top</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
     </style>
 
     <style name="linear_layout_style">
@@ -41,5 +40,16 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:layout_marginTop">@dimen/layout_margin_top</item>
+    </style>
+
+    <style name="button_style" parent="@style/teams_score_style">
+        <item name="android:layout_marginLeft">@dimen/button_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_right</item>
+    </style>
+
+    <style name="radio_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/radio_group_layout_marginBottom</item>
     </style>
 </resources>

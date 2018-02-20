@@ -10,13 +10,13 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private final int GAMES_TO_WIN = 6;
 
+    private int setsToWin = 3;
     private int playerAScore;
     private int playerBScore;
     private int playerAGames;
     private int playerBGames;
     private int playerASets;
     private int playerBSets;
-    private int setsToWin = 3;
     private boolean playerAAdvantage;
     private boolean playerBAdvantage;
     private boolean deuceScore;
@@ -31,10 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Restores state of needed variables ans set its values to views.
+     *
      * @param savedInstanceState contains all variables to restore.
      */
     @Override
-    protected  void onRestoreInstanceState(Bundle savedInstanceState) {
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
         playerAScore = savedInstanceState.getInt("playerAScore");
@@ -52,8 +53,9 @@ public class MainActivity extends AppCompatActivity {
         updateButtonsText();
         updateGamesText();
         updateSetsText();
-        if (playerAScore > 0 || playerBScore > 0 || playerAGames > 0 || playerBGames > 0 ||
-                playerASets > 0 || playerBSets > 0 || playerAAdvantage || playerBAdvantage || deuceScore) {
+        if (playerAScore > 0 || playerBScore > 0 || playerAGames > 0 ||
+                playerBGames > 0 || playerASets > 0 || playerBSets > 0 ||
+                playerAAdvantage || playerBAdvantage || deuceScore) {
             RadioGroup radioGroup = findViewById(R.id.set_type_radio_buttons_group);
             radioGroup.setVisibility(View.GONE);
             TextView textView = findViewById(R.id.info_text_view);
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Saves all variables to restore them after screen will be recreated after rotation.
+     *
      * @param outState bundle to save variables.
      */
     @Override
@@ -85,10 +88,13 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Adds one point to player A.
+     *
      * @param view button pressed.
      */
     public void addScorePlayerA(View view) {
-        if (win) return;
+        if (win) {
+            return;
+        }
 
         if (deuceScore) {
             playerAAdvantage = true;
@@ -97,12 +103,17 @@ public class MainActivity extends AppCompatActivity {
             updateButtonsText();
             return;
         }
+
         if (tieBreak) {
             addScorePlayerATieBreak();
             return;
         }
-        if (playerAScore == 0 || playerAScore == 15) playerAScore += 15;
-        else if (playerAScore == 30 || playerAScore == 40) playerAScore += 10;
+
+        if (playerAScore == 0 || playerAScore == 15) {
+            playerAScore += 15;
+        } else if (playerAScore == 30 || playerAScore == 40) {
+            playerAScore += 10;
+        }
 
         if (playerAScore == 15 && playerBScore == 0) {
             RadioGroup radioGroup = findViewById(R.id.set_type_radio_buttons_group);
@@ -111,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
             textView.setVisibility(View.VISIBLE);
             textView.setText("");
         }
+
         if ((playerAScore == 50 && playerBScore <= 30) || playerAAdvantage) {
             addGamePlayerA();
             playerAScore = 0;
@@ -120,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
             deuceScore = true;
             playerBAdvantage = false;
         }
+
         updateButtonsText();
     }
 
@@ -128,7 +141,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void addScorePlayerATieBreak() {
         playerAScore++;
-        if ((playerAScore == 7 && playerBScore < 6) || (playerAScore == 6 && playerBScore < 5) || playerAAdvantage) {
+        if ((playerAScore == 7 && playerBScore < 6) ||
+                (playerAScore == 6 && playerBScore < 5) || playerAAdvantage) {
             addGamePlayerA();
             playerAScore = 0;
             playerBScore = 0;
@@ -137,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
             deuceScore = true;
             playerBAdvantage = false;
         }
+
         updateButtonsText();
     }
 
@@ -157,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
             TextView infoTextView = findViewById(R.id.info_text_view);
             infoTextView.setText(R.string.tie_break);
         }
+
         updateGamesText();
     }
 
@@ -171,10 +187,13 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Adds one point to player B.
+     *
      * @param view button pressed.
      */
     public void addScorePlayerB(View view) {
-        if (win) return;
+        if (win) {
+            return;
+        }
 
         if (deuceScore) {
             playerAAdvantage = false;
@@ -183,12 +202,17 @@ public class MainActivity extends AppCompatActivity {
             updateButtonsText();
             return;
         }
+
         if (tieBreak) {
             addScorePlayerBTieBreak();
             return;
         }
-        if (playerBScore == 15 || playerBScore == 0) playerBScore += 15;
-        else if (playerBScore == 30 || playerBScore == 40) playerBScore += 10;
+
+        if (playerBScore == 15 || playerBScore == 0) {
+            playerBScore += 15;
+        } else if (playerBScore == 30 || playerBScore == 40) {
+            playerBScore += 10;
+        }
 
         if (playerAScore == 0 && playerBScore == 15) {
             RadioGroup radioGroup = findViewById(R.id.set_type_radio_buttons_group);
@@ -197,6 +221,7 @@ public class MainActivity extends AppCompatActivity {
             textView.setVisibility(View.VISIBLE);
             textView.setText("");
         }
+
         if ((playerBScore == 50 && playerAScore <= 30) || playerBAdvantage) {
             addGamePlayerB();
             playerAScore = 0;
@@ -206,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
             deuceScore = true;
             playerAAdvantage = false;
         }
+
         updateButtonsText();
     }
 
@@ -214,7 +240,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void addScorePlayerBTieBreak() {
         playerBScore++;
-        if ((playerBScore == 7 && playerAScore < 6) || (playerBScore == 6 && playerAScore < 5) || playerBAdvantage) {
+        if ((playerBScore == 7 && playerAScore < 6) ||
+                (playerBScore == 6 && playerAScore < 5) || playerBAdvantage) {
             addGamePlayerB();
             playerAScore = 0;
             playerBScore = 0;
@@ -223,6 +250,7 @@ public class MainActivity extends AppCompatActivity {
             deuceScore = true;
             playerAAdvantage = false;
         }
+
         updateButtonsText();
     }
 
@@ -243,6 +271,7 @@ public class MainActivity extends AppCompatActivity {
             TextView infoTextView = findViewById(R.id.info_text_view);
             infoTextView.setText(R.string.tie_break);
         }
+
         updateGamesText();
     }
 
@@ -315,6 +344,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Starts new match, sets all global variables to zeroes and false.
+     *
      * @param view new match button.
      */
     public void newMatch(View view) {
@@ -354,6 +384,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Sets long match.
+     *
      * @param view radio button long match chosen.
      */
     public void setLongMatch(View view) {
@@ -362,6 +393,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Sets short match.
+     *
      * @param view radio button short match chosen.
      */
     public void setShortMatch(View view) {

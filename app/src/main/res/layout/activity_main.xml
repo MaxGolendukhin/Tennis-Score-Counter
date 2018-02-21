@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.android.tennisscorecounter.MainActivity">
 
     <LinearLayout
@@ -16,7 +17,6 @@
                 style="@style/teams_data_style"
                 android:text="@string/player_A_title" />
 
-            <View style="@style/separator_view_style" />
 
             <TextView
                 style="@style/teams_data_style"
@@ -33,7 +33,6 @@
                 android:id="@+id/player_A_sets_text_view"
                 style="@style/teams_score_style" />
 
-            <View style="@style/separator_view_style" />
 
             <TextView
                 android:id="@+id/player_B_sets_text_view"
@@ -50,8 +49,6 @@
                 android:id="@+id/player_A_games_text_view"
                 style="@style/teams_score_style" />
 
-            <View style="@style/separator_view_style" />
-
             <TextView
                 android:id="@+id/player_B_games_text_view"
                 style="@style/teams_score_style" />
@@ -67,8 +64,6 @@
                 android:id="@+id/player_A_score_button"
                 style="@style/button_style"
                 android:onClick="addScorePlayerA" />
-
-            <View style="@style/separator_view_style" />
 
             <Button
                 android:id="@+id/player_B_score_button"

@@ -328,7 +328,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Updates info tex view.
+     * Updates info text view.
      */
     private void updateInfoText() {
         if (playerASets == setsToWin) {

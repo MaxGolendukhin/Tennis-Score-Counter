@@ -11,6 +11,14 @@ public class MainActivity extends AppCompatActivity {
     private final int GAMES_TO_WIN = 6;
     private final int SHORT_GAME_SETS = 3;
     private final int LONG_GAME_SETS = 5;
+    private final int ONE_QUARTER_GAME = 15;
+    private final int HALVE_GAME = 30;
+    private final int THREE_QUARTERS_GAME = 40;
+    private final int GAME = 50;
+    private final int ADD_BEFORE_HALVE_GAME = 15;
+    private final int ADD_AFTER_HALVE_GAME = 10;
+    private final int DEUCE_GAMES = 6;
+
 
     private int setsToWin = SHORT_GAME_SETS;
     private int playerAScore;
@@ -108,13 +116,13 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        if (playerAScore == 0 || playerAScore == 15) {
-            playerAScore += 15;
-        } else if (playerAScore == 30 || playerAScore == 40) {
-            playerAScore += 10;
+        if (playerAScore == 0 || playerAScore == ONE_QUARTER_GAME) {
+            playerAScore += ADD_BEFORE_HALVE_GAME;
+        } else if (playerAScore == HALVE_GAME || playerAScore == THREE_QUARTERS_GAME) {
+            playerAScore += ADD_AFTER_HALVE_GAME;
         }
 
-        if (playerAScore == 15 && playerBScore == 0) {
+        if (playerAScore == ONE_QUARTER_GAME && playerBScore == 0) {
             RadioGroup radioGroup = findViewById(R.id.set_type_radio_buttons_group);
             radioGroup.setVisibility(View.GONE);
             TextView textView = findViewById(R.id.info_text_view);
@@ -122,12 +130,13 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("");
         }
 
-        if ((playerAScore == 50 && playerBScore <= 30) || playerAAdvantage) {
+        if ((playerAScore == GAME && playerBScore <= HALVE_GAME) || playerAAdvantage) {
             addGamePlayerA();
             playerAScore = 0;
             playerBScore = 0;
             playerAAdvantage = false;
-        } else if ((playerAScore == 40 && playerBScore == 40) || playerBAdvantage) {
+        } else if ((playerAScore == THREE_QUARTERS_GAME && playerBScore == THREE_QUARTERS_GAME)
+                || playerBAdvantage) {
             deuceScore = true;
             playerBAdvantage = false;
         }
@@ -140,13 +149,13 @@ public class MainActivity extends AppCompatActivity {
      */
     private void addScorePlayerATieBreak() {
         playerAScore++;
-        if ((playerAScore == 7 && playerBScore < 6) ||
-                (playerAScore == 6 && playerBScore < 5) || playerAAdvantage) {
+        if ((playerAScore - playerBScore > 1 && playerAScore <= DEUCE_GAMES) || playerAAdvantage) {
             addGamePlayerA();
             playerAScore = 0;
             playerBScore = 0;
             playerAAdvantage = false;
-        } else if ((playerAScore == 6 && playerBScore == 6) || playerBAdvantage) {
+        } else if ((playerAScore == DEUCE_GAMES && playerBScore == DEUCE_GAMES)
+                || playerBAdvantage) {
             deuceScore = true;
             playerBAdvantage = false;
         }
@@ -206,13 +215,13 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        if (playerBScore == 15 || playerBScore == 0) {
-            playerBScore += 15;
-        } else if (playerBScore == 30 || playerBScore == 40) {
-            playerBScore += 10;
+        if (playerBScore == ONE_QUARTER_GAME || playerBScore == 0) {
+            playerBScore += ADD_BEFORE_HALVE_GAME;
+        } else if (playerBScore == HALVE_GAME || playerBScore == THREE_QUARTERS_GAME) {
+            playerBScore += ADD_AFTER_HALVE_GAME;
         }
 
-        if (playerAScore == 0 && playerBScore == 15) {
+        if (playerAScore == 0 && playerBScore == ONE_QUARTER_GAME) {
             RadioGroup radioGroup = findViewById(R.id.set_type_radio_buttons_group);
             radioGroup.setVisibility(View.GONE);
             TextView textView = findViewById(R.id.info_text_view);
@@ -220,12 +229,13 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("");
         }
 
-        if ((playerBScore == 50 && playerAScore <= 30) || playerBAdvantage) {
+        if ((playerBScore == GAME && playerAScore <= HALVE_GAME) || playerBAdvantage) {
             addGamePlayerB();
             playerAScore = 0;
             playerBScore = 0;
             playerBAdvantage = false;
-        } else if ((playerAScore == 40 && playerBScore == 40) || playerAAdvantage) {
+        } else if ((playerAScore == THREE_QUARTERS_GAME && playerBScore == THREE_QUARTERS_GAME)
+                || playerAAdvantage) {
             deuceScore = true;
             playerAAdvantage = false;
         }
@@ -238,13 +248,13 @@ public class MainActivity extends AppCompatActivity {
      */
     private void addScorePlayerBTieBreak() {
         playerBScore++;
-        if ((playerBScore == 7 && playerAScore < 6) ||
-                (playerBScore == 6 && playerAScore < 5) || playerBAdvantage) {
+        if ((playerBScore - playerAScore > 1 && playerBScore <= DEUCE_GAMES) || playerBAdvantage) {
             addGamePlayerB();
             playerAScore = 0;
             playerBScore = 0;
             playerBAdvantage = false;
-        } else if ((playerAScore == 6 && playerBScore == 6) || playerAAdvantage) {
+        } else if ((playerAScore == DEUCE_GAMES && playerBScore == DEUCE_GAMES)
+                || playerAAdvantage) {
             deuceScore = true;
             playerAAdvantage = false;
         }

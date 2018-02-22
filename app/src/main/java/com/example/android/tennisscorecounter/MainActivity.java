@@ -9,8 +9,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private final int GAMES_TO_WIN = 6;
+    private final int SHORT_GAME_SETS = 3;
+    private final int LONG_GAME_SETS = 5;
 
-    private int setsToWin = 3;
+    private int setsToWin = SHORT_GAME_SETS;
     private int playerAScore;
     private int playerBScore;
     private int playerAGames;
@@ -31,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Restores state of needed variables ans set its values to views.
-     *
      * @param savedInstanceState contains all variables to restore.
      */
     @Override
@@ -66,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Saves all variables to restore them after screen will be recreated after rotation.
-     *
      * @param outState bundle to save variables.
      */
     @Override
@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Adds one point to player A.
-     *
      * @param view button pressed.
      */
     public void addScorePlayerA(View view) {
@@ -187,7 +186,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Adds one point to player B.
-     *
      * @param view button pressed.
      */
     public void addScorePlayerB(View view) {
@@ -344,7 +342,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Starts new match, sets all global variables to zeroes and false.
-     *
      * @param view new match button.
      */
     public void newMatch(View view) {
@@ -384,19 +381,17 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Sets long match.
-     *
      * @param view radio button long match chosen.
      */
     public void setLongMatch(View view) {
-        setsToWin = 5;
+        setsToWin = LONG_GAME_SETS;
     }
 
     /**
      * Sets short match.
-     *
      * @param view radio button short match chosen.
      */
     public void setShortMatch(View view) {
-        setsToWin = 3;
+        setsToWin = SHORT_GAME_SETS;
     }
 }
